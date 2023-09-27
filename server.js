@@ -32,7 +32,7 @@ const transporter = createTransport({
     console.log(nombre, telefono,email,coment) 
     await transporter.sendMail({
         from: "FERNATEX APP <NORESPONDER@FERNATEX.com>",
-        to: `comanelias5@gmail.com`,
+        to: `fertanexsrl5@gmail.com`,
         subject: "ENVIO NUEVA CONSULTA DESDE PAGINA WEB",
         text: `MENSAJE DE PRUEBA
         NOMBRE: ${nombre},
@@ -42,10 +42,17 @@ const transporter = createTransport({
         `,
         html: `
        
-        <p>NOMBRE: ${nombre},
-        TELEFONO : ${telefono}
-        EMAIL: ${email}
-        COMENT: ${coment}
+        <h1>Buenas, envio una consulta desde la web<h1>
+        <p>
+        NOMBRE: ${nombre}, <br>
+        TELEFONO : ${telefono}<br>
+        EMAIL: ${email}<br>
+        COMENT: ${coment}<br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <strong> Enviado desde la web, no responder <strong>
         </p>
         `,
       });
